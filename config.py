@@ -46,7 +46,7 @@ COMPANY_KEYWORD_MAP = {
     
     # Whitespace 카테고리
     "신세계": ["신세계", "이마트", "조선호텔앤리조트", "신세계푸드", "신세계인터내셔날", "이마트24", "신세계센트럴시티","SSG"],
-    "KDB금융": ["KDB금융", "한국산업은행", "케이디비생명보험", "산은캐피탈", "에이치엠엠", "제주항공", "한국지엠"],
+    "KDB금융": ["에이치엠엠", "HMM", "케이디비중소중견메자닌사모투자", "KDB중소중견메자닌사모투자", "케이디비생명보험", "KDB생명보험", "KDB생보", "산은캐피탈", "한국산업은행", "케이디비칸서스밸류사모투자전문회사", "KDB", "KDB인베스트먼트제일호사모투자", "케이디비인베스트먼트제일호사모투자", "산은인베스트먼트", "산은인프라자산운용", "한국지엠", "GM", "태영건설", "한진칼", "대한항공", "아시아나항공", "HJ중공업"],
     "GS": ["GS", "지에스건설", "지에스칼텍스", "지에스리테일", "지에스에너지", "지에스홈쇼핑", "지에스글로벌", "GS건설", "GS칼텍스", "GS리테일", "GS에너지", "GS홈쇼핑", "GS글로벌", "GS25"],
     "LS": ["LS", "엘에스일렉트릭", "엘에스전선", "엘에스엠앤엠", "엘에스글로벌인코퍼레이티드", "엘에스아이앤디", "엘에스메탈", "LS일렉트릭", "LS전선", "LS M&M", "LS글로벌인코퍼레이티드", "LS I&D", "LS메탈"]
 }
@@ -70,7 +70,16 @@ TRUSTED_PRESS_ALIASES = {
     "아시아경제": ["아시아경제", "asiae", "asiae.co.kr"],
     "뉴스핌": ["뉴스핌", "newspim", "newspim.com"],
     "뉴시스": ["뉴시스", "newsis", "newsis.com"],
-    "헤럴드경제": ["헤럴드경제", "herald", "heraldcorp", "heraldcorp.com"]
+    "헤럴드경제": ["헤럴드경제", "herald", "heraldcorp", "heraldcorp.com"],
+    "더벨": ['더벨', 'thebell', 'thebell.co.kr'],
+    "SBS": ['SBS', 'SBS Biz', 'SBSBiz', 'SBS뉴스', 'sbs', 'sbs.co.kr'],
+    "MBC": ['MBC', 'mbc', 'mbc.co.kr', 'MBC뉴스', 'mbcnews'],
+    "KBS": ['KBS', 'kbs', 'kbs.co.kr', 'KBS뉴스', 'kbsnews'],
+    "딜사이트": ['딜사이트', 'DealSite', 'dealsite', 'dealsite.co.kr'],
+    "이코노믹리뷰": ['이코노믹리뷰', 'econvill.com', 'econvill'],
+    "딜사이트경제TV": ['딜사이트경제TV', 'DealSite경제TV', 'dealsite.economictv', 'dealsite.economictv.co.kr'],
+    "한국금융경제신문": ['한국금융경제신문', '한국금융경제신문', 'kfn.economictv', 'kfn.economictv.co.kr'],
+    "조세일보": ['조세일보', 'joseilbo.com']
 }
 
 # Additional press aliases for re-evaluation
@@ -159,6 +168,7 @@ SELECTION_CRITERIA = """다음 기준에 해당하는 뉴스가 있다면 반드
 # GPT Model options
 GPT_MODELS = {
     #"openai.gpt-4.1-2025-04-14" : "chatpwc",#pwc
+    "gpt-5-mini":"최신모델",
     "gpt-4.1": "최신모델",
     "gpt-4o": "빠르고 실시간, 멀티모달 지원",
     "gpt-4-turbo": "최고 성능, 비용은 좀 있음",
@@ -169,7 +179,7 @@ GPT_MODELS = {
 
 # Default GPT model to use
 #DEFAULT_GPT_MODEL = "gpt-4.1"
-DEFAULT_GPT_MODEL = "gpt-4.1" 
+DEFAULT_GPT_MODEL = "gpt-5-mini" 
 
 # Email settings
 EMAIL_SETTINGS = {
